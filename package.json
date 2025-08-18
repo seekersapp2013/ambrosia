@@ -1,0 +1,28 @@
+{
+  "name": "ambrosia",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:frontend dev:backend",
+    "dev:frontend": "vite",
+    "dev:backend": "convex dev",
+    "build": "tsc -b && vite build",
+    "lint": "tsc && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@auth/core": "^0.37.4",
+    "@convex-dev/auth": "^0.0.88",
+    "convex": "^1.25.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.4.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.3.3",
+    "eslint": "^9.0.0"
+  }
+}

@@ -1,0 +1,53 @@
+
+/* Base font */
+html, body { font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+
+/* Brand palette (approximate) */
+:root {
+  --ambrosia-50: #fdf5f9;
+  --ambrosia-100: #fbe8f1;
+  --ambrosia-200: #f5c6dc;
+  --ambrosia-300: #eb94b9;
+  --ambrosia-500: #BF1A65;
+  --ambrosia-600: #9d1452;
+  --accent: #BF1A65; /* same as 500 */
+}
+
+
+.bg-ambrosia-50 { background-color: var(--ambrosia-50); }
+.bg-ambrosia-100 { background-color: var(--ambrosia-100); }
+.bg-ambrosia-200 { background-color: var(--ambrosia-200); }
+.bg-ambrosia-300 { background-color: var(--ambrosia-300); }
+.bg-ambrosia-500 { background-color: var(--ambrosia-500); }
+.text-accent { color: var(--accent); }
+.bg-accent { background-color: var(--accent); }
+
+/* Utilities from the original HTML */
+.notification-dot {
+  position: absolute; top: -2px; right: -2px;
+  width: 8px; height: 8px; border-radius: 9999px;
+  background: #ef4444;
+}
+
+.square-image { position: relative; width: 100%; padding-top: 100%; }
+.square-image > img,
+.square-image > div > img {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+}
+
+/* Graphic content overlay */
+.graphic-content-warning {
+ background: rgba(191, 26, 101, 0.85);
+  backdrop-filter: blur(2px);
+}
+
+/* Leaderboard number circle */
+.leaderboard-position {
+  width: 2rem; height: 2rem; border-radius: 9999px; 
+  background: var(--ambrosia-500); color: white; 
+  display: flex; align-items: center; justify-content: center; font-weight: 700;
+}
+
+/* Profile tabs */
+.profile-tab { padding: .5rem; border-radius: .5rem; }
+.profile-tab.tab-active { color: var(--accent); }
