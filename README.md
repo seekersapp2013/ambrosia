@@ -1,4 +1,3 @@
----
 
 # Ambrosia – A Safe Haven for Health Information
 
