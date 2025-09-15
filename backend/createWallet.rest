@@ -1,1 +1,0 @@
-curl https://codepen.oathstone.cloud/:3000/createWallet
