@@ -1,11 +1,4 @@
-# ignore everything
 /*
-
-# but not .gitignore itself
 !/.gitignore
-
-# keep only ambrosia folder
 !/ambrosia/
-
-# keep only .kiro folder
 !/.kiro/
