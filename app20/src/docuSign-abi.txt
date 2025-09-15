@@ -1,0 +1,252 @@
+{
+  "message": "Celo contract deployed successfully!",
+  "contractTitle": "MyToken",
+  "environment": 0,
+  "network": "celo",
+  "userBalance": "0.1",
+  "gasFee": "0.039574707925",
+  "transactionFee": "0.0007914941585",
+  "contractAddress": "0xEa9198a977A283101511C1A7542aea70f3652451",
+  "celoScanUrl": "https://celoscan.io/address/0xEa9198a977A283101511C1A7542aea70f3652451",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_oathstone",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "docHash",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address[]",
+          "name": "signers",
+          "type": "address[]"
+        }
+      ],
+      "name": "DocumentCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "signer",
+          "type": "address"
+        }
+      ],
+      "name": "DocumentSigned",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "txHash",
+          "type": "string"
+        }
+      ],
+      "name": "EnvelopeAttached",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "txHash",
+          "type": "string"
+        }
+      ],
+      "name": "attachEnvelope",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "docHash",
+          "type": "string"
+        },
+        {
+          "internalType": "address[]",
+          "name": "signerAddresses",
+          "type": "address[]"
+        }
+      ],
+      "name": "createDocument",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "envelopes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "txHash",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "exists",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDocumentStatus",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "hash",
+          "type": "string"
+        },
+        {
+          "internalType": "address[]",
+          "name": "signers",
+          "type": "address[]"
+        },
+        {
+          "internalType": "bool[]",
+          "name": "signedStatus",
+          "type": "bool[]"
+        },
+        {
+          "internalType": "bool",
+          "name": "allSigned",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "oathstoneSigned",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "oathstone",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "oathstoneSign",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "documentId",
+          "type": "uint256"
+        }
+      ],
+      "name": "signDocument",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}
